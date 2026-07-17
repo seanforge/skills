@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'When writing, refactoring, or reviewing code, apply the readable-code skill (/readable-code): minimize time-till-understanding.'"
+          }
+        ]
+      }
+    ]
+  }
+}

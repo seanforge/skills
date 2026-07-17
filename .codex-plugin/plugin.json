@@ -1,0 +1,20 @@
+{
+  "name": "skills",
+  "version": "0.0.3",
+  "description": "A personal agent plugin for Claude Code and Codex.",
+  "author": {
+    "name": "seanforge",
+    "email": "xiang9156@gmail.com",
+    "url": "https://github.com/seanforge"
+  },
+  "homepage": "https://github.com/seanforge/skills",
+  "repository": "https://github.com/seanforge/skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "claude-code",
+    "codex",
+    "workflows"
+  ],
+  "skills": "./skills/"
+}

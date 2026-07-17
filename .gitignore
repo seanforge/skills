@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local / secrets
+.env
+.env.local
+*.local
+
+# Local scratch and evaluation artifacts
+.draft/
+.drafts/
+
+# Skill eval workspaces (local iteration artifacts)
+skills/*-workspace/
+
+# Skill eval definitions (local only, not shipped)
+skills/*/evals/
