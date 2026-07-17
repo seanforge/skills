@@ -47,7 +47,7 @@ Never remove required validation or weaken a guarantee because a test appears lo
 
 - Prefer real managed dependencies and other real collaborators when they are practical, deterministic, controlled, and their real semantics matter.
 - When behavior depends on a dependency's real constraints, transactions, serialization, ordering, concurrency, or failure semantics, test that implementation at the nearest practical boundary. Do not use a fake that reimplements expected dependency behavior as evidence of the real dependency's semantics.
-- Use a dummy, fake, stub, spy, or mock only for the role the test needs. Do not adopt mock-everything or mock-nothing doctrine.
+- Replace collaborators outside the chosen test boundary. Use a double or in-memory implementation that faithfully provides the contract and semantics the test relies on; do not recreate unrelated dependency behavior.
 - Use doubles to control unavailable, slow, nondeterministic, destructive, or externally owned boundaries; retain broader tests where double fidelity cannot establish production confidence.
 - Treat a fake that accumulates stateful, domain, or production-like failure behavior as a fidelity and design warning; use the real implementation when those semantics matter, or move owned behavior into production code instead of enriching the fake.
 - Do not verify calls used only to supply test inputs. Verify commands and protocols only when their occurrence, payload, ordering, or cardinality is observable behavior.

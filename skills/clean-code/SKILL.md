@@ -1,9 +1,9 @@
 ---
-name: readable-code
-description: "Use whenever the requested deliverable creates or modifies code: implementations, bug fixes, refactors, scripts, services, endpoints, tests, or cleanup. Apply language-agnostic readable-code rules for naming, structure, state, comments, scope, and tests. Skip read-only explanation, review, diagnosis, command execution, and prose-only work."
+name: clean-code
+description: "Use whenever the requested deliverable creates or modifies code: implementations, bug fixes, refactors, scripts, services, endpoints, tests, or cleanup. Apply language-agnostic clean-code rules for naming, structure, state, comments, scope, and tests. Skip read-only explanation, review, diagnosis, command execution, and prose-only work."
 ---
 
-# Readable Code
+# Clean Code
 
 Minimize time-till-understanding. Understanding is sufficient only when the code can be modified safely, likely defects can be identified, and interactions with surrounding code can be traced.
 
@@ -12,7 +12,7 @@ Resolve conflicts in this order:
 1. Correctness, explicit requirements, and preserved behavior
 2. Repository conventions and public compatibility
 3. Language and framework idioms
-4. Readable Code heuristics
+4. Clean Code heuristics
 
 Leave clear code unchanged. Keep every change within the requested scope.
 

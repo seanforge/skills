@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo 'When writing, refactoring, or reviewing code, apply the readable-code skill: minimize time-till-understanding.'"
+            "command": "echo 'When writing, refactoring, or reviewing code, apply the clean-code skill: minimize time-till-understanding.'"
           }
         ]
       }

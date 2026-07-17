@@ -1,7 +1,7 @@
 {
   "name": "skills",
   "description": "A personal agent plugin for Claude Code and Codex.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "XiangZhang",
     "email": "xiang9156@gmail.com"
