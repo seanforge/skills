@@ -30,6 +30,7 @@ Never remove required validation or weaken a guarantee because a test appears lo
 
 ## Shape the suite
 
+- Judge suite completeness against the meaningful behavior and failure space. Cover every materially distinct contract outcome, boundary, state transition, invariant, and failure mode that can change the expected result; do not multiply cases that prove the same thing.
 - A broader test is justified only when it establishes boundary behavior, wiring, serialization, integration, or emergent behavior that narrower tests cannot establish.
 - Keep end-to-end tests focused on critical journeys and system properties unavailable at narrower boundaries.
 - Pin cross-team and third-party interfaces with contract tests or recorded real responses; do not treat a handwritten fake as evidence of their behavior.
