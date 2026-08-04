@@ -1,6 +1,6 @@
 # Repository setup
 
-Use this workflow to establish the root `AGENTS.md`. Do not create nested files during setup unless the user explicitly includes hierarchy design in scope.
+Use this workflow when no effective root instruction file exists or the user explicitly requests a fresh setup or migration to canonical `AGENTS.md`. When migrating an effective override or configured fallback, also use [maintenance.md](maintenance.md) and preserve its intentional policies. Do not create nested files during setup unless the user explicitly includes hierarchy design in scope.
 
 ## 1. Inspect repository evidence
 
@@ -43,7 +43,7 @@ Do not ask a policy question merely to fill the template. Omit irrelevant module
 
 Use `CODING AND MAINTENANCE STANDARDS` to name canonical standards documents and the skills required for code, test, architecture, planning, or review work. List a named skill only when the repository intentionally requires it and the target agent environment provides it; otherwise link or state the portable standard. Put behavioral guidance in its relevant engineering, testing, or review section instead of duplicating it here.
 
-Keep the root `MUST-FOLLOW RULES` section permanently, even when no rule qualifies. Do not duplicate its rules in other sections.
+Keep `MUST-FOLLOW RULES` permanently in the effective root instruction file, even when no rule qualifies. Do not duplicate its rules in other sections.
 
 Always retain the template's evidence-first rule. Retain its other `ENGINEERING APPROACH` guidance when the repository adopts it. Record evidence sources and verification triggers only when they guide future decisions. State when an explicit repository decision overrides conflicting generic tool or skill recommendations.
 

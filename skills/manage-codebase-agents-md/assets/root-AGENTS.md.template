@@ -42,7 +42,7 @@
 
 ## ENGINEERING APPROACH
 
-- Never design or implement from remembered model knowledge alone. Proactively obtain current evidence first; inspect the repository and, when relevant, official documentation, standards, upstream source, reference implementations, or other credible current sources.
+- Never perform repository work or make repository decisions from remembered model knowledge alone. Proactively obtain current evidence first: inspect the repository and, when relevant or freshness-sensitive, official documentation, standards, upstream source, reference implementations, or other credible current sources.
 - Reassess assumptions and design direction when patches, special cases, adapters, or incidental complexity begin accumulating; correct the root cause instead of extending a flawed approach.
 - When new behavior no longer fits the architecture, make the smallest timely refactor that restores coherence before adding it; replace an obsolete structure instead of layering around it.
 - Design for the repository's actual scale and proven workflows. Require current evidence before adopting materially greater abstraction or operational complexity.
