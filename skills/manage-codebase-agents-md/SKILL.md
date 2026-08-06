@@ -1,6 +1,6 @@
 ---
 name: manage-codebase-agents-md
-description: "Use when the user wants to create, audit, update, reorganize, or maintain root-level or nested AGENTS.md, AGENTS.override.md, or other host-recognized repository instruction files. Manage repository setup, configured fallback files, instruction hierarchy, directory scope, inheritance, precedence, rule placement, templates, and ongoing repository-specific guidance. Do not use for orchestrating AI agents or editing unrelated documentation."
+description: "Use when the user wants to create, audit, or maintain repository instruction files such as AGENTS.md and CLAUDE.md, including hierarchy, overrides, fallbacks, and directory scope. Do not use for agent orchestration or unrelated documentation."
 ---
 
 # Manage Codebase AGENTS.md
