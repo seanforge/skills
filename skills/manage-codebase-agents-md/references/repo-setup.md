@@ -21,7 +21,7 @@ Admit only:
 
 - A one- or two-sentence repository description covering users or operating scale when code cannot make it clear.
 - Mandatory, consequential rules that are not already enforced by code or tooling.
-- Essential supporting context that cannot be recovered from code and fits in one or two sentences.
+- Concise, essential, self-contained supporting context that cannot be recovered from code.
 - Pointers to non-code domain-modeling context or platform and release policy.
 - Pointers to the files that define development commands, without copying the commands.
 
@@ -49,8 +49,8 @@ Copy [root-AGENTS.md.template](../assets/root-AGENTS.md.template), then:
 
 - Replace placeholders with verified facts and explicit decisions.
 - Point to command entry-point files instead of copying commands.
-- Keep essential supporting context inline only when it fits in one or two sentences.
-- Point to longer context, or context already owned elsewhere, without restating or summarizing it.
+- Keep concise, essential, self-contained supporting context inline.
+- Point to larger or independently maintained context without restating or summarizing it.
 - Put any additional mandatory, unencoded policy in `MUST-FOLLOW RULES`; do not create another section.
 - Remove every unused section and placeholder except the permanent `MUST-FOLLOW RULES` heading.
 

@@ -7,7 +7,7 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 
 ## Shared workflow
 
-**Write mandatory rules directly. Omit facts that code or executable configuration can explain. Keep essential supporting context inline only when it fits in one or two sentences; use pointers when it is longer or already owned elsewhere.**
+**Write mandatory rules and concise, essential supporting context directly. Omit facts that code or executable configuration can explain. Link larger or independently maintained context to its canonical source without restating it.**
 
 1. Read the instruction files effective for the target path, then inspect its code and configuration.
 2. Add mandatory rules directly; use pointers for supporting context already owned elsewhere.
@@ -25,7 +25,7 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 
 - Preserve an existing intentional policy unless the user authorizes changing it or repository evidence proves it stale.
 - Include only mandatory rules and consequential context that code or executable configuration cannot express. Prefer enforcement in code or tooling over prose.
-- Keep necessary inline context to one or two sentences. Use `REPOSITORY MAP` only for pointers to domain-modeling context, development-command entry points, platform or release policy, or comparable context already owned elsewhere. Do not restate or summarize the target source.
+- Keep concise, essential, self-contained supporting context inline. Use `REPOSITORY MAP` for pointers to larger or independently maintained context such as domain modeling, development-command entry points, or platform and release policy. Do not restate or summarize the target source.
 - Keep `MUST-FOLLOW RULES` in each effective root instruction file even when empty. In nested files, retain it only when a local rule qualifies. Remove every other unused section and all placeholders from final files.
 - Use emphatic language only for durable rules whose violation would cause unsupported behavior, architectural damage, data risk, broken delivery, or substantial rework.
 - Do not create nested `AGENTS.md` files speculatively. Require stable local differences that cannot be expressed clearly at a broader scope.

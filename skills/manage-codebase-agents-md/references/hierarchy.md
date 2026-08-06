@@ -25,7 +25,7 @@ When one filesystem repository spans multiple instruction boundaries, maintain e
 
 Create one only for mandatory local rules or essential supporting context that differs from the parent and cannot be enforced or recovered from code and executable configuration. Do not create one for architecture, toolchain, commands, tests, directory structure, or other facts the subtree already explains.
 
-For a justified nested file, state its scope explicitly, include `MUST-FOLLOW RULES` only when a local rule qualifies, keep essential context to one or two sentences, and use pointer-only `REPOSITORY MAP` entries when longer context is owned elsewhere.
+For a justified nested file, state its scope explicitly, include `MUST-FOLLOW RULES` only when a local rule qualifies, keep concise and self-contained context inline, and use pointer-only `REPOSITORY MAP` entries for larger or independently maintained context.
 
 ## Audit the hierarchy
 
