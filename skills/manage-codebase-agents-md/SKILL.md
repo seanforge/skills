@@ -7,6 +7,8 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 
 ## Shared workflow
 
+**Never turn an instruction file into repository documentation. If code or executable configuration can explain something, omit it.**
+
 1. Read the instruction files effective for the target path, then inspect its code and configuration.
 2. Add only mandatory rules or non-code pointers; ask only when they cannot be discovered.
 3. Put each rule at the broadest valid scope, preserve unrelated changes, and validate the result.
