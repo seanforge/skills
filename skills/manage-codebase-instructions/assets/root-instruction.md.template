@@ -1,0 +1,13 @@
+# [REPOSITORY NAME]
+
+[Describe the repository, its primary users, and its actual operating scale in one or two sentences.]
+
+## MUST-FOLLOW RULES
+
+- **[AREA]:** [Required action or constraint]. [Trigger or scope]. Source: [`path`].
+
+## REPOSITORY MAP
+
+1. **Domain modeling context:** [`path/to/context`]
+2. **Development commands:** [`Makefile`], [`package.json`]
+3. **Platform and release policy:** [`path/to/policy`]

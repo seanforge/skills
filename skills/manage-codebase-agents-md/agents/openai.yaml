@@ -1,4 +1,0 @@
-interface:
-  display_name: "Manage Codebase AGENTS.md"
-  short_description: "Create and maintain hierarchical codebase instructions"
-  default_prompt: "Use $manage-codebase-agents-md to create or maintain the AGENTS.md hierarchy for this codebase."
