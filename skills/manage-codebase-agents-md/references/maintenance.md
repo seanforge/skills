@@ -23,6 +23,7 @@ Treat an unverifiable consequential policy as unresolved: preserve and report it
 ## 3. Maintain policy quality
 
 - Keep `MUST-FOLLOW RULES` prominent and permanent in each effective root instruction file; retain only mandatory, consequential rules that code or tooling does not already enforce. In nested files, remove the section when no local rule qualifies.
+- Keep essential inline supporting context to one or two sentences.
 - Keep `REPOSITORY MAP` pointer-only. Retain entries only for non-code domain-modeling context, development-command entry points, platform or release policy, or comparable context that code cannot explain.
 - Remove architecture, technology, workflow, directory, behavior, command, testing, review, and delivery explanations that an agent can recover from the repository.
 - Prefer enforcement in code or tooling over prose.
