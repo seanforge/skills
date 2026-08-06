@@ -1,6 +1,6 @@
 # Repository setup
 
-Use this workflow when no effective root instruction file exists or the user explicitly requests a fresh setup or migration to canonical `AGENTS.md`. When migrating an effective override or configured fallback, also use [maintenance.md](maintenance.md) and preserve its intentional policies. Do not create nested files during setup unless the user explicitly includes hierarchy design in scope.
+Use this workflow when no effective root instruction file exists or the user explicitly requests a fresh setup or migration to the canonical root instruction file. When migrating an effective override or configured fallback, also use [maintenance.md](maintenance.md) and preserve its intentional policies. Do not create nested files during setup unless the user explicitly includes hierarchy design in scope.
 
 ## 1. Inspect repository evidence
 
@@ -45,7 +45,7 @@ Do not ask merely to fill the template.
 
 ## 5. Fill the root template
 
-Copy [root-AGENTS.md.template](../assets/root-AGENTS.md.template), then:
+Copy [root-instruction.md.template](../assets/root-instruction.md.template), then:
 
 - Replace placeholders with verified facts and explicit decisions.
 - Point to command entry-point files instead of copying commands.

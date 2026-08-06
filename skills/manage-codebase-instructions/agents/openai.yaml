@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Codebase Instructions"
+  short_description: "Create concise, enforceable codebase instructions"
+  default_prompt: "Use $manage-codebase-instructions to create or maintain this codebase's effective repository instruction hierarchy."
