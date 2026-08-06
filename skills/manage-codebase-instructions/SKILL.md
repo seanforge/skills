@@ -7,7 +7,9 @@ description: "Use when the user wants to create, audit, or maintain repository i
 
 ## Shared workflow
 
-**Keep concise mandatory rules and small essential context inline; group longer non-code information by topic in Markdown files and leave only links; omit anything code or configuration explains.**
+Instruction files hold durable guidance that agents cannot reliably derive from the repository.
+
+**Use whatever sections the repository needs. Keep concise mandatory rules and small essential context inline; group longer non-code information by topic in Markdown files and leave only links; omit anything code or configuration explains.**
 
 1. Read the effective instructions, code, and configuration.
 2. Apply the content boundary above at the broadest valid scope.
