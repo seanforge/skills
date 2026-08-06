@@ -7,11 +7,9 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 
 ## Shared workflow
 
-1. Find the filesystem repository root and target path. Resolve the target agent host's instruction-discovery root, ancestor traversal boundary, recognized filenames, per-directory selection, and precedence rules. For targeted work, read each effective instruction file within that boundary through the target path. For hierarchy-wide work, enumerate recognized instruction files within the boundary, distinguish effective files from shadowed ones, and read each complete effective parent-child chain.
-2. Read the code and executable configuration before asking questions or editing. Treat them as the explanation for architecture, technology, workflows, and behavior; do not restate what an agent can recover directly. Preserve unrelated user changes.
-3. Ask only about mandatory policy or context that code and configuration cannot establish. Never ask the user to repeat discoverable facts.
-4. Within each effective instruction boundary, write rules at the broadest directory where they remain true. Keep narrower files focused on local additions or deliberate overrides.
-5. Re-read every changed file and validate its paths, commands, scope, precedence, and consistency.
+1. Read the instruction files effective for the target path, then inspect its code and configuration.
+2. Add only mandatory rules or non-code pointers; ask only when they cannot be discovered.
+3. Put each rule at the broadest valid scope, preserve unrelated changes, and validate the result.
 
 ## Choose the workflow
 
