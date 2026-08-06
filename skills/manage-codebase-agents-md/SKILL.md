@@ -7,7 +7,7 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 
 ## Shared workflow
 
-**Keep a small set of mandatory rules and brief useful context inline; group longer non-code information by topic in Markdown files and leave only links; omit anything code or configuration explains.**
+**Keep concise mandatory rules and small essential context inline; group longer non-code information by topic in Markdown files and leave only links; omit anything code or configuration explains.**
 
 1. Read the effective instructions, code, and configuration.
 2. Apply the content boundary above at the broadest valid scope.
