@@ -25,7 +25,7 @@ When one filesystem repository spans multiple instruction boundaries, maintain e
 
 Create one only for mandatory local rules or non-code context pointers that differ from the parent and cannot be enforced or recovered from code and executable configuration. Do not create one for architecture, toolchain, commands, tests, directory structure, or other facts the subtree already explains.
 
-Use [nested-AGENTS.md.template](../assets/nested-AGENTS.md.template) for a justified file. State its scope explicitly, retain `MUST-FOLLOW RULES` only when a local rule qualifies, keep `REPOSITORY MAP` pointer-only, remove unused entries, and avoid restating effective-root guidance.
+For a justified nested file, state its scope explicitly, include `MUST-FOLLOW RULES` only when a local rule qualifies, keep `REPOSITORY MAP` pointer-only when local non-code context differs, and avoid restating effective-root guidance.
 
 ## Audit the hierarchy
 

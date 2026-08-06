@@ -18,7 +18,7 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 - When no effective root instruction file exists, or the user explicitly requests a fresh setup, read [repo-setup.md](references/repo-setup.md) and use [root-AGENTS.md.template](assets/root-AGENTS.md.template).
 - When a noncanonical override or configured fallback is already effective, use [maintenance.md](references/maintenance.md). Create and migrate to canonical `AGENTS.md` only when the user explicitly requests that migration.
 - For an audit, correction, extension, or cleanup of existing instructions, read [maintenance.md](references/maintenance.md).
-- For nested instructions, hierarchy audits, or moving rules between directories, also read [hierarchy.md](references/hierarchy.md). Use [nested-AGENTS.md.template](assets/nested-AGENTS.md.template) only when a nested file is justified.
+- For nested instructions, hierarchy audits, or moving rules between directories, also read [hierarchy.md](references/hierarchy.md).
 - For a full rebuild, read both workflow references and the hierarchy reference when nested files exist.
 
 ## Editing constraints
