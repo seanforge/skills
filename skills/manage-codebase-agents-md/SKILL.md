@@ -7,10 +7,10 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 
 ## Shared workflow
 
-**If code or executable configuration can explain something, omit it. For non-code context, link the canonical source without restating or summarizing it.**
+**Write mandatory rules directly. Omit facts that code or executable configuration can explain. When a canonical source already owns supporting context, link it without restating or summarizing it.**
 
 1. Read the instruction files effective for the target path, then inspect its code and configuration.
-2. Add only mandatory rules or non-code pointers; ask only when they cannot be discovered.
+2. Add mandatory rules directly; use pointers for supporting context already owned elsewhere.
 3. Put each rule at the broadest valid scope, preserve unrelated changes, and validate the result.
 
 ## Choose the workflow
