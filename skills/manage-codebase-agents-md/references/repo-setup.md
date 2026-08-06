@@ -4,61 +4,52 @@ Use this workflow when no effective root instruction file exists or the user exp
 
 ## 1. Inspect repository evidence
 
-Read the smallest sufficient set of current sources:
+Read enough code and executable configuration to avoid documenting what they already explain:
 
-- Top-level structure, README, contribution guide, manifests, lockfiles, runtime-version files, task runners, and build or packaging configuration.
-- Test, lint, formatting, type-checking, CI, release, and PR configuration.
-- Architecture, design, domain-vocabulary, platform, security, migration, and operational documents.
-- Existing deferred-work or technical-debt policy.
-- Repository-declared coding standards and required agent skills or workflows that the target agents can actually load.
-- Current external evidence needed for version-sensitive behavior, external interfaces, or applicable practice: official documentation, standards, upstream source, relevant reference implementations, or other credible current sources.
+- Inspect source, manifests, task runners, build configuration, tests, and CI directly.
+- Locate domain-modeling context, development-command entry points, and platform or release policy only to provide stable pointers.
+- Identify explicit mandatory rules that code or tooling does not already enforce.
+- Obtain current external evidence only when a consequential non-code policy is freshness-sensitive.
 
 Do not traverse dependencies, generated output, vendored source, snapshots, or build artifacts beyond identifying their role.
 
-## 2. Build an evidence sheet
+## 2. Classify candidate content
 
-Record facts before drafting:
+Exclude anything an agent can recover from code or executable configuration, including architecture, technology stack, workflows, directory structure, commands, tests, and behavior.
 
-- Repository purpose, primary users, actual operating scale, and proven current workflows.
-- Languages, frameworks, runtime and package-manager versions, IDE recommendations, build and packaging tools, and exact commands.
-- Supported platforms or environments, explicitly unsupported scope, primary release gates, and best-effort targets.
-- Canonical vocabulary, architecture, design, deferred-work, platform, and other trigger-specific guidance.
-- Decisions that require fresh evidence and the authoritative repository, official, standards, upstream, or implementation sources for each.
+Admit only:
 
-Mark every item as verified, inferred, or unresolved. Never substitute model memory for current evidence that can be inspected.
+- A one- or two-sentence repository description covering users or operating scale when code cannot make it clear.
+- Mandatory, consequential rules that are not already enforced by code or tooling.
+- Pointers to non-code domain-modeling context or platform and release policy.
+- Pointers to the files that define development commands, without copying the commands.
 
 ## 3. Ask only unresolved high-impact questions
 
-Ask a small batch at a time:
+Ask only when the answer cannot be discovered:
 
-1. What workflows and environments are officially supported, primary, best effort, or out of scope?
-2. Which tools, frameworks, build systems, packaging systems, coding standards, maintenance standards, or available agent skills are mandatory or prohibited?
-3. Which decisions require fresh external evidence, and which current sources are authoritative?
-4. Which tests, platforms, checks, or approvals block merge and release, and what PR accounting or size policy applies?
-5. Which violations would cause rejected work, architectural damage, data risk, broken delivery, or substantial rework?
+1. Which unencoded rules are mandatory enough that violating them would reject the work or cause substantial damage?
+2. Which non-code source is authoritative for domain modeling?
+3. Which non-code source is authoritative for platform or release policy?
 
-Do not ask a policy question merely to fill the template. Omit irrelevant modules.
+Do not ask merely to fill the template.
 
-## 4. Establish standards and hard rules
+## 4. Draft only irreducible instructions
 
-Use `CODING AND MAINTENANCE STANDARDS` to name canonical standards documents and the skills required for code, test, architecture, planning, or review work. List a named skill only when the repository intentionally requires it and the target agent environment provides it; otherwise link or state the portable standard. Put behavioral guidance in its relevant engineering, testing, or review section instead of duplicating it here.
-
-Keep `MUST-FOLLOW RULES` permanently in the effective root instruction file, even when no rule qualifies. Do not duplicate its rules in other sections.
-
-Always retain the template's evidence-first rule. Retain its other `ENGINEERING APPROACH` guidance when the repository adopts it. Record evidence sources and verification triggers only when they guide future decisions. State when an explicit repository decision overrides conflicting generic tool or skill recommendations.
-
-Do not choose a default position on legacy compatibility, deliberately unsupported or self-inflicted behavior, or responsibility for externally owned failures. Add such a policy only when the target repository explicitly defines it and the rule is consequential to supported work.
+- Keep `MUST-FOLLOW RULES` permanently in the effective root instruction file, even when empty.
+- Put every qualifying rule there. Include its trigger, scope, and source when available.
+- Use `REPOSITORY MAP` only for stable pointers; do not add explanations that duplicate the target files.
+- Prefer adding an enforceable check to code or tooling over documenting a prose rule.
+- Do not add generic engineering, architecture, testing, logging, review, or PR advice.
 
 ## 5. Fill the root template
 
 Copy [root-AGENTS.md.template](../assets/root-AGENTS.md.template), then:
 
 - Replace placeholders with verified facts and explicit decisions.
-- Convert README commands and version declarations into concise workflow instructions instead of copying explanatory prose.
-- Link canonical documents rather than duplicating their contents.
-- Include deferred-work policy only when a canonical destination and admission criteria exist. Include logging only when repository evidence or an explicit decision adopts it.
-- Include human-realistic guidance whenever user-facing E2E applies. Include other platform, testing, and PR policy only when relevant.
-- Add a concise repository-specific section when a verified consequential policy has no existing slot.
+- Point to command entry-point files instead of copying commands.
+- Point to non-code context or policy instead of summarizing it.
+- Put any additional mandatory, unencoded policy in `MUST-FOLLOW RULES`; do not create another section.
 - Remove every unused section and placeholder except the permanent `MUST-FOLLOW RULES` heading.
 
-Validate each command against executable configuration and each referenced path against the worktree. If a fact remains unresolved, report it separately instead of encoding a guess.
+Validate every referenced path against the worktree. If a policy remains unresolved, report it separately instead of encoding a guess.

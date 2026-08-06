@@ -8,8 +8,8 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 ## Shared workflow
 
 1. Find the filesystem repository root and target path. Resolve the target agent host's instruction-discovery root, ancestor traversal boundary, recognized filenames, per-directory selection, and precedence rules. For targeted work, read each effective instruction file within that boundary through the target path. For hierarchy-wide work, enumerate recognized instruction files within the boundary, distinguish effective files from shadowed ones, and read each complete effective parent-child chain.
-2. Inspect current repository evidence and proactively obtain relevant current external evidence before asking questions or editing. Never work from remembered model knowledge alone. Preserve unrelated user changes.
-3. Ask only about consequential policy that cannot be established from current files. Never ask the user to repeat discoverable facts.
+2. Read the code and executable configuration before asking questions or editing. Treat them as the explanation for architecture, technology, workflows, and behavior; do not restate what an agent can recover directly. Preserve unrelated user changes.
+3. Ask only about mandatory policy or context that code and configuration cannot establish. Never ask the user to repeat discoverable facts.
 4. Within each effective instruction boundary, write rules at the broadest directory where they remain true. Keep narrower files focused on local additions or deliberate overrides.
 5. Re-read every changed file and validate its paths, commands, scope, precedence, and consistency.
 
@@ -24,7 +24,8 @@ description: "Use when the user wants to create, audit, update, reorganize, or m
 ## Editing constraints
 
 - Preserve an existing intentional policy unless the user authorizes changing it or repository evidence proves it stale.
-- Do not invent commands, supported environments, architectural boundaries, release gates, evidence requirements, or hard rules.
+- Include only mandatory rules and consequential context that code or executable configuration cannot express. Prefer enforcement in code or tooling over prose.
+- Use `REPOSITORY MAP` only for pointers to domain-modeling context, development-command entry points, platform or release policy, or comparable non-code context. Do not inventory or summarize architecture, technology stack, workflows, directory structure, or behavior.
 - Keep `MUST-FOLLOW RULES` in each effective root instruction file even when empty. In nested files, retain it only when a local rule qualifies. Remove every other unused section and all placeholders from final files.
 - Use emphatic language only for durable rules whose violation would cause unsupported behavior, architectural damage, data risk, broken delivery, or substantial rework.
 - Do not create nested `AGENTS.md` files speculatively. Require stable local differences that cannot be expressed clearly at a broader scope.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Manage Codebase AGENTS.md"
-  short_description: "Create and maintain hierarchical codebase instructions"
+  short_description: "Create concise, enforceable codebase instructions"
   default_prompt: "Use $manage-codebase-agents-md to create or maintain this codebase's effective repository instruction hierarchy."

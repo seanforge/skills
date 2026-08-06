@@ -23,14 +23,14 @@ When one filesystem repository spans multiple instruction boundaries, maintain e
 
 ## Decide whether a nested file is justified
 
-Create one only for stable differences in module responsibility, architecture, toolchain, commands, tests, ownership, safety, generated-code policy, or delivery workflow. Do not create one merely because a directory is large, important, or independently named.
+Create one only for mandatory local rules or non-code context pointers that differ from the parent and cannot be enforced or recovered from code and executable configuration. Do not create one for architecture, toolchain, commands, tests, directory structure, or other facts the subtree already explains.
 
-Use [nested-AGENTS.md.template](../assets/nested-AGENTS.md.template) for a justified file. State its scope explicitly, retain `MUST-FOLLOW RULES` only when a local rule qualifies, list standards or required skills only when they differ from the parent, remove unused sections, and avoid restating effective-root guidance.
+Use [nested-AGENTS.md.template](../assets/nested-AGENTS.md.template) for a justified file. State its scope explicitly, retain `MUST-FOLLOW RULES` only when a local rule qualifies, keep `REPOSITORY MAP` pointer-only, remove unused entries, and avoid restating effective-root guidance.
 
 ## Audit the hierarchy
 
 - Verify that every rule is reachable from the work it governs.
 - Verify that moving work between directories activates the intended instruction chain.
-- Check parent and child files for incompatible commands, terminology, support policy, and quality gates.
+- Check parent and child files for incompatible mandatory rules or policy pointers.
 - Prefer a single broader rule when multiple children contain the same instruction.
 - Prefer a narrow child rule when an effective-root rule has accumulated module-specific exceptions.
