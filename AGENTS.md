@@ -26,7 +26,7 @@ on demand.
 ## Conventions
 
 - Skill names are kebab-case and match their directory.
-- Descriptions state when to use **and** when not to, to avoid false triggers.
+- Descriptions state when to use; add exclusions only when they prevent plausible false triggers.
 - Keep skills self-contained — no cross-skill imports.
 - Keep README and plugin manifests generic and stable. Do not list individual skills,
   skill counts, repository layout, or implementation details there; the filesystem and
