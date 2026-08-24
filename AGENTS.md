@@ -32,10 +32,12 @@ not replace the agent's judgment.
   content.
 - Keep skills independent and atomic — no cross-skill imports. Multiple skills may
   compose orthogonally in the same task.
+- Assign each domain decision to one owning skill; compose skills instead of duplicating
+  its policy.
 - Do not expand a high-level invariant when a staff-level agent can reliably derive the
   concrete action.
 
-Brutal review is not nitpicking. Do not invent work to make a review appear thorough.
+Do not invent work to make a skill or review appear thorough.
 
 ## Structure
 
