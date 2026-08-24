@@ -12,12 +12,12 @@ Own the implementation as a coherent whole. Tests follow stabilized behavior; th
 - Implement the intended change from the available context. Do not write new tests to drive implementation.
 - Treat the requested change as one implementation boundary; explicitly separated, independently shippable subtasks are separate boundaries.
 - Resolve local, reversible details autonomously. Surface gaps that change behavior, scope, or public contracts.
-- Handle reachable, in-scope edge cases in supported use and at owned boundaries. Do not add behavior for impossible states, broken invariants, unsupported use, or speculative futures.
+- Handle reachable, in-scope edge cases in supported use and at owned boundaries.
 - Treat resource ownership, lifetime, concurrency, and failure semantics as part of correctness when affected by the change.
 
 ## Stabilize
 
-Exercise the affected behavior through the nearest executable boundary that preserves its semantics. Fix in-scope defects and integration gaps until behavior is consistent.
+Exercise the affected behavior through the nearest executable boundary that preserves its semantics. Fix in-scope defects and integration gaps until observed behavior matches the intended behavior.
 
 When execution is infeasible, use the strongest available validation and report the gap.
 

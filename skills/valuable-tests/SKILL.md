@@ -18,7 +18,7 @@ Preserve explicit validation requirements and public contracts.
 
 Choose the narrowest scope that preserves the failure semantics. Add another scope only when it protects a distinct failure class.
 
-- **Unit:** Verify a local behavioral contract without real collaboration semantics. Test a function directly only when it owns an independent contract; exercise private behavior through that contract and do not expose internals for testing.
+- **Unit:** Verify a local behavioral contract without real collaboration semantics. Test a function directly only when it owns an independent contract; exercise private behavior through that contract.
 - **Integration:** Verify behavior that arises from real collaboration or dependency semantics.
 - **E2E:** Define the SUT explicitly; enter through its supported external interface and traverse its in-scope production path to an observable result. Reserve E2E for critical behavior unavailable at narrower scopes.
 
