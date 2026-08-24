@@ -1,6 +1,6 @@
 ---
 name: clean-code
-description: "Use whenever the requested deliverable creates or modifies code: implementations, bug fixes, refactors, scripts, services, endpoints, tests, or cleanup. Apply language-agnostic clean-code rules for naming, structure, state, comments, scope, and tests. Skip read-only explanation, review, diagnosis, command execution, and prose-only work."
+description: "Use whenever the requested deliverable creates or modifies code: implementations, bug fixes, refactors, scripts, services, endpoints, tests, or cleanup. Apply language-agnostic clean-code rules for naming, structure, state, comments, and scope. Skip read-only explanation, review, diagnosis, command execution, and prose-only work."
 ---
 
 # Clean Code
@@ -22,7 +22,7 @@ Leave clear code unchanged. Keep every change within the requested scope.
 - Replace generic or overloaded names with the concrete operation or value. Eliminate names with plausible conflicting interpretations.
 - Use positive, unambiguous boolean semantics. Split orthogonal effects instead of hiding them behind one flag.
 - Reserve accessor-like names such as `get` and `size` for operations whose cost matches local expectations; expose expensive work in the name.
-- Make public interfaces hard to misuse. Encode contracts in names, types, structure, and tests.
+- Make public interfaces hard to misuse. Encode contracts in names, types, and structure.
 - Preserve established project and language vocabulary unless it misrepresents semantics.
 
 For naming-heavy work or public API design, read [references/naming-and-contracts.md](references/naming-and-contracts.md).
@@ -55,13 +55,4 @@ For naming-heavy work or public API design, read [references/naming-and-contract
 - Start constraint-heavy design with the simplest correct model. Optimize against demonstrated constraints; quantify time, space, precision, and failure-mode trade-offs.
 - Pay for new complexity only with correctness, explicit requirements, demonstrated constraints, or reduced per-unit complexity — never with speculative flexibility.
 
-## Tests
-
-- Expose only intent-relevant setup and values at each test's top level; hide incidental construction behind focused helpers.
-- Use the smallest clean input that distinguishes the behavior. Separate independent behaviors and failure causes.
-- Name tests by behavior and situation. Make failures report expected, actual, and the minimal triggering context.
-- Cover boundaries, empty states, duplicates, extremes, invalid transitions, and relevant failure modes without mega-cases.
-- Control ambient state and nondeterminism through explicit boundaries.
-- Preserve production design quality and repository coverage requirements; do not add test-only distortion.
-
-For deep restructuring or test work, read [references/structure-and-tests.md](references/structure-and-tests.md).
+For deep restructuring, read [references/structure.md](references/structure.md).

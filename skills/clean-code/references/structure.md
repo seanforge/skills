@@ -1,4 +1,4 @@
-# Structure and tests
+# Structure
 
 ## Decomposition
 
@@ -22,13 +22,3 @@
 - Bound resource growth where the domain requires it.
 - Compare alternatives by correctness, semantic complexity, time, space, precision, failure modes, and operational cost.
 - Decompose interacting state by responsibility only when the resulting dependency graph remains simpler than the original unit.
-
-## Tests
-
-- Keep Arrange/Act/Assert or the local equivalent semantically visible without ceremonial structure.
-- Use parameterization only when cases retain independent diagnostic value.
-- Select values that distinguish boundaries and semantics; avoid arbitrary noisy fixtures.
-- Generate stress volume programmatically.
-- Use framework-native diagnostic assertions. Add triggering context only when expected and actual are insufficient.
-- Treat difficult setup, nondeterminism, global mutation, and broad mocking as design feedback, not an invitation for more scaffolding.
-- Do not weaken encapsulation, widen production APIs, or add branches solely for tests.
