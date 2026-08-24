@@ -20,6 +20,9 @@ common-term explanations, framework tutorials, or examples of familiar technique
 A skill provides decision criteria, invariants, boundaries, and stop conditions; it does
 not replace the agent's judgment.
 
+- Define the desired agent behavior, not only prohibitions.
+- Scale specificity to risk; prescribe procedures only when deviation creates a concrete
+  correctness, safety, or operational failure.
 - Brevity is a design goal, not a defect.
 - Do not add guidance merely because some knowledge is absent.
 - Include only instructions that materially change decisions, prevent plausible
@@ -54,7 +57,13 @@ Do not invent work to make a skill or review appear thorough.
 3. Body: the steps/guidance. Keep it focused; add supporting files in the same dir if needed.
 4. Bump the `version` in both `.claude-plugin/plugin.json` and `.codex-plugin/plugin.json`.
 
-## Missing-content standard
+## Skill change standard
+
+Validate skills against realistic agent decisions and failure modes, not wording or
+topical completeness.
+
+Evolve skills from observed agent failures; generalize each into the narrowest reusable
+invariant.
 
 Treat guidance as missing only when all of the following are true:
 
