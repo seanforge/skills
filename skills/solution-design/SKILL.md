@@ -1,6 +1,6 @@
 ---
 name: solution-design
-description: "Use when a software change has unresolved technical design decisions, material alternatives, or consequential feasibility uncertainty before implementation. Skip routine changes and implementation from an already settled design."
+description: "Use before implementing a software change when no decision-complete implementation direction exists. Explore evidence, resolve consequential design decisions, and produce an implementation outline. Skip routine changes and implementation from an already settled design."
 ---
 
 # Solution Design
