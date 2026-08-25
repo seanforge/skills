@@ -10,7 +10,7 @@ Converge a non-trivial software change into one evidence-backed technical direct
 ## Investigate
 
 - Build an accurate model of the relevant behavior, architecture, conventions, constraints, scale, and failure model from repository evidence and available context.
-- Search broadly across current primary sources, mature prior art, and failure reports before inventing. Verify decision-shaping claims against the strongest available evidence; model memory supplies search terms, not evidence.
+- Search broadly for relevant mature prior art and failure modes before inventing. Verify decision-shaping external claims against current primary sources or the strongest available evidence; model memory supplies search terms, not evidence.
 - Evaluate comparable implementations for fit, maintenance, licensing, integration cost, and operational cost. Reuse proven work when justified; do not inherit complexity required only at another system's scale.
 - Run a disposable spike when reading cannot establish feasibility. Keep it out of production code.
 
@@ -24,7 +24,7 @@ Converge a non-trivial software change into one evidence-backed technical direct
 
 ## Outline
 
-- Describe the expected code shape and end-to-end flow: ownership across affected areas, material contract and data or state changes, external effects and error propagation, prerequisite refactoring, and the decisions and trade-offs that shaped the direction. Name significant files, interfaces, types, or symbols when they carry a consequential design decision.
+- Describe the expected code shape and end-to-end flow: material contract and data or state changes, external effects and error propagation, prerequisite refactoring, and the decisions and trade-offs that shaped the direction. Name significant files, interfaces, types, or symbols when they carry a consequential design decision.
 - State what each named area owns, how the pieces interact, and why the boundaries belong there. Preserve evidence only where it explains a decision.
 - Leave local, reversible implementation details to the implementer. Do not produce a task checklist, exhaustive file inventory, pseudocode, exact edits, or speculative architecture.
 - Produce the outline in the current context. Create a persistent artifact only when requested.
