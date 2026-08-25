@@ -17,7 +17,7 @@ Own the implementation as a coherent whole. Tests follow stabilized behavior; th
 
 ## Stabilize
 
-Exercise the affected behavior through the nearest executable boundary that preserves its semantics. Use disposable probes for material paths that normal execution cannot exercise reliably. Fix in-scope defects and integration gaps until observed behavior matches the intended behavior.
+Exercise the affected behavior through the nearest executable boundary that preserves its semantics. Use disposable probes for material paths that normal execution cannot exercise reliably. Establish an evidence-backed causal mechanism for in-scope defects and integration gaps; fix root causes—not symptoms—until observed behavior matches the intended behavior.
 
 When execution is infeasible, use the strongest available validation and report the gap.
 
