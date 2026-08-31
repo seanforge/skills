@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: Use when the user asks for a read-only, defect-first review of uncommitted changes, a base-branch diff, a commit, a pull request, or another specified target.
+argument-hint: "[lite|medium|high] [target]"
 ---
 
 # Code Review
@@ -10,9 +11,13 @@ review comments, or delegate the review.
 
 ## Choose the profile
 
-Use `high` unless the user requests another profile:
+Invocation arguments: `$ARGUMENTS`
 
-- `light`: report P0 and P1 findings.
+Treat the first argument as the profile when it is `lite`, `medium`, or `high`; the remaining
+arguments describe the review target. If the first argument is absent or not a profile, use `high`
+and treat all arguments as the target.
+
+- `lite`: report P0 and P1 findings.
 - `medium`: report P0 through P2 findings.
 - `high`: report P0 through P3 findings.
 
@@ -62,7 +67,7 @@ scenarios trigger it. State severity accurately and make the issue immediately u
 - `P2`: Normal. To be fixed eventually.
 - `P3`: Low. Nice to have.
 
-If nothing qualifies, say `No P0-P1 findings.` for `light`, `No P0-P2 findings.` for `medium`, or
+If nothing qualifies, say `No P0-P1 findings.` for `lite`, `No P0-P2 findings.` for `medium`, or
 `No findings.` for `high`. Do not invent a finding. End with a brief assessment and any material
 test gaps or residual risks within the selected profile. Never claim the patch is correct after a
 partial review.
